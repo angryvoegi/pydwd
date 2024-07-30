@@ -80,7 +80,7 @@ class BaseCrawler:
         try:
             with codecs.open(self._station_file, 'r', encoding='ISO-8859-1') as f:
                 return f.readlines()
-        except IOError, error:
+        except(IOError, error):
             logger.error('Cannot open local file: %s.' % (error, self._station_file))
             return None
 
