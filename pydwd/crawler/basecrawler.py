@@ -42,7 +42,7 @@ class BaseCrawler:
             station_name = station['station_name']
             if len(name) < len(station_name) \
                     and station_name[len(name)] is not '-':
-                        print "DEL %s" % (station_name)
+                        print("DEL %s" % (station_name))
                         del tmp_station_list[idx]
 
             idx += 1
